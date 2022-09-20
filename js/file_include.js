@@ -1,7 +1,16 @@
-// jquery  헤더 푸터 넣기
+//   헤더 푸터 넣기
 
-
-$(function(){ 
-  $("#header").load("../include/_header.html");  
-  $("#footer").load("../include/_footer.html");  
-});
+fetch("../include/_footer.html")
+    .then((response) => {
+        return response.text();
+    })
+    .then((data) => {
+        document.querySelector("footer").innerHTML = data;
+    });
+fetch("../include/_head.html")
+    .then((response) => {
+        return response.text();
+    })
+    .then((data) => {
+        document.querySelector("head").innerHTML = data;
+    });

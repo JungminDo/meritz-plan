@@ -8,25 +8,18 @@
         <div id="wrap">
             <div class="pageClassMain" id="container">
                 <div id="content" role="main">컨텐츠 시작</div>
+
+                <div class="slide-box">
+                    <div class="slide-area">
+                        <div class="slide-content"></div>
+                    </div>
+                </div>
+
+                <footer id="footer"></footer>
             </div>
-            <footer id="footer"></footer>
         </div>
     </body>
 </html>
 
-<script>
-    fetch("../include/_footer.html")
-        .then((response) => {
-            return response.text();
-        })
-        .then((data) => {
-            document.querySelector("footer").innerHTML = data;
-        });
-    fetch("../include/_head.html")
-        .then((response) => {
-            return response.text();
-        })
-        .then((data) => {
-            document.querySelector("head").innerHTML = data;
-        });
-</script>
+<script src="../../js/file_include.js"></script>
+<script src="../../js/slide.js"></script>
