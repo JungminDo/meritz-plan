@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="ko">
+    <head>
+        <head id="head"></head>
+    </head>
 
-<head>
-    <!--#include virtual="../include/_head.html" -->
-</head>
-
-<body>
-    <div id="wrap">
-        <!--#include virtual="../include/_header.html" -->
-        <div class="pageClassMain" id="container">
-            <div id="content" role="main">컨텐츠 시작</div>
+    <body>
+        <div id="wrap">
+            <div class="pageClassMain" id="container">
+                <div id="content" role="main">컨텐츠 시작</div>
+            </div>
+            <footer id="footer"></footer>
         </div>
-        <!--#include virtual="../include/_footer.html" -->
-    </div>
-    <div class="dimm"></div>
-</body>
-
+    </body>
 </html>
+
+<script>
+    fetch("../include/_footer.html")
+        .then((response) => {
+            return response.text();
+        })
+        .then((data) => {
+            document.querySelector("footer").innerHTML = data;
+        });
+    fetch("../include/_head.html")
+        .then((response) => {
+            return response.text();
+        })
+        .then((data) => {
+            document.querySelector("head").innerHTML = data;
+        });
+</script>
