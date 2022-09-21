@@ -1,15 +1,13 @@
 $(function () {
 
-    let sliding = 0,
-        startClientY = 0,
+    let startClientY = 0,
         pixelOffset = 0,
-        currentSlide = 0,
         touchStartY = 0,
         touchEndY = 0 ;
 
-    let $kkoArea = $('.kkopop');
-    let $kkoArea = $('.kkopop');
-    let $kkoArea = $('.kkopop');
+    let $slideArea = $('.slide-area');
+    let $slideBox = $('.slide-box');
+    let $slideContent = $('.slide-content');
 
     $slideArea.on('mousedown touchstart' , slideStart);
     $slideArea.on('mouseup touchend' , slideEnd);
@@ -28,7 +26,7 @@ $(function () {
         event = event.originalEvent.touches[0];
         deltaSlide = event.clientY - startClientY;
         pixelOffest = startPixelOffest + deltaSlide;
-        $slideId.css('transfom', 'translateY(' + pixelOffset + 'px').removeClass();
+        $slideBox.css('transfom', 'translateY(' + pixelOffset + 'px').removeClass();
 
     }
 
@@ -36,8 +34,8 @@ $(function () {
         event.preventDefault();
         toychEndY = event.originalEvent.changedTouches[0].screenY;
         if (touchEndY = touchStartY  > 20) {
-            $kkoArea.fadeOut();
-            $('.').removeClass('on_slide');
+            $slideArea.fadeOut();
+            $slideContent.removeClass('on_slide');
         }
 
     }
