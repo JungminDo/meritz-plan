@@ -1,25 +1,80 @@
 <!DOCTYPE html>
 <html lang="ko">
     <head>
-        <head id="head"></head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta charset="utf-8" />
+        <title>프로젝트타이틀</title>
+     
+        <link href="../../css/common.css" type="text/css" rel="stylesheet" />
+        <script src="../../js/jquery.js"></script>
+        <script src="../../js/swiper.js"></script>
     </head>
 
     <body>
         <div id="wrap">
             <div class="pageClassMain" id="container">
                 <div id="content" role="main">컨텐츠 시작</div>
-
-                <div class="slide-box">
-                    <div class="slide-area">
-                        <div class="slide-content"></div>
-                    </div>
-                </div>
-
                 <footer id="footer"></footer>
+            </div>
+            <div class="slide-box">
+                <div class="slide-area">
+                    <div class="slide-content"></div>
+                </div>
             </div>
         </div>
     </body>
 </html>
 
 
-<script src="../../js/file_include.js"></script>
+<script src="../../js/slide.js"></script>
+
+<!-- 
+<script>
+$(function () {
+
+    let startClientY = 0,
+        startPixelOffest = 0,
+        pixelOffset = 0,
+        touchStartY = 0,
+        touchEndY = 0 ;
+
+    let $slideArea = $('.slide-area');
+    let $slideBox = $('.slide-box');
+    let $slideContent = $('.slide-content');
+
+    $slideArea.on('mousedown touchstart' , slideStart);
+    $slideArea.on('mouseup touchend' , slideEnd);
+    $slideArea.on('mousemove touchmove' , slide);
+
+    function slideStart(event) {
+        event.preventDefault();
+        touchStartY = event.originalEvent.changedTouches[0].screenY;
+        event = event.originalEvent.touches[0];
+        startClientY = event.clientY;
+
+    }
+
+    function slide(event) {
+        event.preventDefault();
+        event = event.originalEvent.touches[0];
+        deltaSlide = event.clientY - startClientY;
+        pixelOffest = startPixelOffest + deltaSlide;
+        $slideBox.css('transfom', 'translateY(' + pixelOffset + 'px').removeClass();
+
+    }
+
+    function slideEnd(event){
+        event.preventDefault();
+        toychEndY = event.originalEvent.changedTouches[0].screenY;
+        if (touchEndY = touchStartY  > 20) {
+            $slideArea.fadeOut();
+            $slideContent.removeClass('on_slide');
+        }
+
+    }
+
+})
+
+
+</script> -->
