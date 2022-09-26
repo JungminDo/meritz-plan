@@ -9,8 +9,8 @@ $(function () {
     // slideArea.on('mousedown touchstart' , slideStart);
     // slideArea.on('mouseup touchend' , slideEnd);
     console.log('체크::::::::::::' + slideArea + ':::::::::' + slideBox);
-    slideArea.addEventListener('mousedown touchstart',slideStart)
-    slideArea.addEventListener('mouseup touchend', slideEnd)
+    slideArea.addEventListener('touchstart',slideStart)
+    slideArea.addEventListener('touchend', slideEnd)
 
     function slideStart(event) {
         event.preventDefault();
