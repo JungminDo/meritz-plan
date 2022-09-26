@@ -1,10 +1,8 @@
-$(function () {
 
     let startClientY = 0,
         touchStartY = 0;
-
-    let slideArea = document.getElementById('slide-area');
     let slideBox = document.getElementById('slide-box');
+    let slideArea = document.getElementById('slide-area');
 
     // slideArea.on('mousedown touchstart' , slideStart);
     // slideArea.on('mouseup touchend' , slideEnd);
@@ -14,21 +12,18 @@ $(function () {
 
     function slideStart(event) {
         event.preventDefault();
-        touchStartY = event.originalEvent.changedTouches[0].screenY;
-        event = event.originalEvent.touches[0];
+        touchStartY = event.changedTouches[0].screenY;
+        console.log('터치슬라이드' + touchStartY);
+        event = event.touches[0];
         startClientY = event.clientY;
-        slideBox.removeClass('fade');
         document.querySelector('body').style.overflow = 'hidden';
         console.log('테스트 시작');
     }
 
     function slideEnd(event){
         event.preventDefault();
-        toychEndY = event.originalEvent.changedTouches[0].screenY;
-            slideBox.addClass('fade');
-            slideArea.removeClass('on_slide');
+        toychEndY = event.changedTouches[0].screenY;
+            slideArea.classList.remove('on_slide');
             document.querySelector('body').style.overflow = '';
             console.log('테스트 끝');
     }
-
-})
