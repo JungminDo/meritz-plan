@@ -652,3 +652,95 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+/* 메인페이지 모바일 화면 */
+.top-cont {
+    position: relative;
+    width: 100%;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+    padding: 1rem;
+}
+
+.mid-cont {
+    position: relative;
+    width: 100%;
+}
+
+.bot-cont {
+    position: relative;
+    width: 100%;
+}
+
+/* 팝업 슬라이드 공통 */
+.slide_box {
+    position: fixed;
+    width: 100%;
+    height: 300px;
+    bottom: 0;
+}
+
+.slide_content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 300px;
+    height: 100%;
+}
+
+.slide_box .slide_area {
+    display: block;
+    position: relative;
+    margin-top: 100vh;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: margin-top 0.5s cubic-bezier(0.75, 0, 0.24, 0.99);
+    -o-transition: margin-top 0.5s cubic-bezier(0.75, 0, 0.24, 0.99);
+    transition: margin-top 0.5s cubic-bezier(0.75, 0, 0.24, 0.99);
+    background-color: blue;
+}
+
+.slide_area.on_slide {
+    margin-top: 0;
+    opacity: 1;
+}
+
+/* 스와이퍼 디폴트 */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    min-height: 100px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
