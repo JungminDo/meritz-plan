@@ -2,23 +2,55 @@
 <html lang="ko">
 
 <head>
-    <!--#include virtual="../include/_head.html" -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="utf-8" />
+    <title>프로젝트타이틀</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link href="../../css/common.css" type="text/css" rel="stylesheet" />
+
+    <script src="../../js/jquery.js"></script>
+
+
 </head>
 
 <body>
     <div id="wrap">
-        <!--#include virtual="../include/_header.html" -->
+        <!-- s: header include-->
+        <header id="header">
+            <ul class="skipnav">
+                <li>
+                    <a href="#content">컨텐츠 바11로가기</a>
+                </li>
+            </ul>
+            <div class="header-content">heade11r</div>
+        </header>
+        <!-- e: header include-->
+
         <div class="pageClassMain" id="container">
             <div id="content" role="main">컨텐츠 </div>
             <footer id="footer"></footer>
         </div>
-        <div id="slide-box" class="slide_box fade">
+        <div id="slide-box" class="slide_box">
             <div id="slide-area" class="slide_area on_slide">
                 <div id="slide-content" class="slide_content"></div>
             </div>
         </div>
-        <!--#include virtual="../include/_footer.html" -->
+        <!-- s: footer include-->
+        <footer id="footer">
+            <div class="footer-content">footer</div>
+        </footer>
+        <!-- e: footer include-->
     </div>
 </body>
 
 </html>
+
+
+<script src="../../js/slide.js" defer></script>
