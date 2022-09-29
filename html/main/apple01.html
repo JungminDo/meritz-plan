@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!--#include virtual="../include/_head.html" -->
+</head>
+
+<body>
+    <div id="wrap">
+        <!--#include virtual="../include/_header.html" -->
+        <div class="pageClassMain" id="container">
+            <div id="content" role="main">
+                <!-- 1강 id hello 폰트 크기 30px 로 바꾸기 -->
+
+                <h2 id="hello">안녕하세요~</h2>
+
+                <!-- 2강 ui 만드는 법칙 1. 미리 디자인 하고 숨김 2. 버튼 누르거나 특정 트리거시 노출 -->
+                <!-- 2강 닫기 버튼 추가 -->
+                <div class="alert-box">alert박스 <button id="close-pop" onclick="closeAlert()">닫기</button></div>
+                <button onclick="openAlert()">클릭버튼</button>
+            </div>
+        </div>
+        <!--#include virtual="../include/_footer.html" -->
+    </div>
+</body>
+
+<script>
+    // 1강 html 수정
+    document.getElementById('hello').innerHTML = '안녕';
+    document.getElementById('hello').style.fontSize = '30px';
+    // 2강 버튼 추가 및 닫기 만들기
+
+
+    // 3강 function
+    function openAlert() {
+        document.getElementsByClassName('alert-box')[0].style.display = 'block';
+    }
+
+    function closeAlert() {
+        document.getElementsByClassName('alert-box')[0].style.display = 'none';
+    }
+</script>
+
+</html>

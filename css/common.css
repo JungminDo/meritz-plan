@@ -744,3 +744,10 @@ body {
     -o-object-fit: cover;
     object-fit: cover;
 }
+
+.alert-box {
+    display: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #6262c2;
+}
