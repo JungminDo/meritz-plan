@@ -6,8 +6,8 @@ no,카테고리명,Depth 1,Depth 2,Depth 3,Depth 4,Depth 5,화면경로,View,담
 비고내용
 비고내용"
 3,메인,메인,메인,,,,html/main/main_mobile.html,"N,D,F,P,G",담당자1,진행중,20220921,
-4,메인,메인,메인,,,,html/main/apple01.html,,,,,
-,메인,,,,,,,,,,,
+4,메인,메인,메인,,,,html/main/apple01.html,"N,D,F,P,G",도정민,진행중,,study
+5,메인,메인,메인,,,,html/main/quest01_color_flipper.html,"N,D,F,P,G",도정민,진행중,,color-flipper
 ,메인,,,,,,,,,,,
 ,메인,,,,,,,,,,,
 ,메인,,,,,,,,,,,
