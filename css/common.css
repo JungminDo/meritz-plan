@@ -795,14 +795,17 @@ body {
 }
 
 .main_area .change_box .txt_code span {
-    color: rgb(142, 142, 231);
+    color: #8e8ee7;
 }
 
 .button_area {
     position: absolute;
-    padding: 15px 30px;
     background-color: rgba(136, 68, 119, 0.3333333333);
     border-radius: 5px;
     border: 1px solid blue;
     bottom: 20%;
+}
+
+.button_area .btn01 {
+    padding: 15px 30px;
 }
