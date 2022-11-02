@@ -36,7 +36,11 @@ window.onload = function () {
 // classList
 // textContent
 
-const countBtn = ("click", () => {
+
+    const q02btn = document.getElementsByClassName("q02btn");
+    
+
+q02btn.addEventListener ("click", () => {
     if (condition) {
         // 감소 버튼
         classList.remove("증감버튼 클래스");
