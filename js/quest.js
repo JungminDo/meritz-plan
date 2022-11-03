@@ -37,24 +37,29 @@ window.onload = function () {
 // textContent
 
 
-    const q02btn = document.getElementsByClassName("q02btn");
-    
+    const q02btn = document.getElementsByClassName(".qbtn");
+    const q02reset =  document.getElementsByClassName(".rebtn");
+    const q02txt = document.getElementById("q02txt");
 
-q02btn.addEventListener ("click", () => {
-    if (condition) {
-        // 감소 버튼
-        classList.remove("증감버튼 클래스");
-    } else {
-        // 증감 버튼
+
+    q02btn.addEventListener ("click", () => {
+        if (condition) {
+            // 감소 버튼
+            classList.remove("증감버튼 클래스");
+        } else {
+            // 증감 버튼
+            classList.remove("감소버튼 클래스");
+        }
+    });
+
+    // 리셋 버튼
+    q02reset.addEventListener("click", () => {
+
         classList.remove("감소버튼 클래스");
-    }
-});
+        classList.remove("증감버튼 클래스");
+    })
 
-// 리셋 버튼
-classList.remove("감소버튼 클래스");
-classList.remove("증감버튼 클래스");
-
-//
+    //
 
 
 };
